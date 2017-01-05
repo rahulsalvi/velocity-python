@@ -21,9 +21,12 @@ Powerline-based theme elements for ZSH and tmux
     [ -f "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh" ] && source "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh"
     ```
 
-3. Add the following line to your .tmux.conf:
+3. Add the following lines to your .tmux.conf:
     ```
-    source-file $HOME/.velocity/velocity-tmux.conf
+    set -g status-right-length 1000
+    set -g status-left-length 1000
+    set -g status-right '#(python3 $HOME/.velocity/velocity.py TMUXSTATUSRIGHT)'
+    set -g status-left '#(python3 $HOME/.velocity/velocity.py TMUXSTATUSLEFT)'
     ```
     Note: replace $HOME with $VELOCITY_DIR as necessary
 
