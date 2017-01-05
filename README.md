@@ -12,14 +12,14 @@ Powerline-based theme elements for ZSH and tmux
 ### Installing
 
 1. Clone the repository:
-```
-git clone https://github.com/rahulsalvi/velocity.git "${VELOCITY_DIR:-$HOME}/.velocity"
-```
+    ```
+    git clone https://github.com/rahulsalvi/velocity.git "${VELOCITY_DIR:-$HOME}/.velocity"
+    ```
 
 2. Add the following line to your .zshrc:
-```
-[ -f "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh" ] && source "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh"
-```
+    ```
+    [ -f "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh" ] && source "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh"
+    ```
 
 ## Configuration
 
