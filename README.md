@@ -1,4 +1,4 @@
-# velocity
+# Velocity
 
 Powerline-based theme elements for ZSH and tmux
 
@@ -35,6 +35,10 @@ Powerline-based theme elements for ZSH and tmux
 The following environment variables can be used to configure the theme:
 
 ```VELOCITY_DIR``` - Set this to the location to where you cloned the project
+
+## Notes
+
+Yes, the name 'Velocity' is a pun on terminal velocity. Get over it.
 
 ## Authors
 
