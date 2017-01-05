@@ -21,6 +21,12 @@ Powerline-based theme elements for ZSH and tmux
     [ -f "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh" ] && source "${VELOCITY_DIR:-$HOME}/.velocity/velocity.zsh"
     ```
 
+3. Add the following line to your .tmux.conf:
+    ```
+    source-file $HOME/.velocity/velocity-tmux.conf
+    ```
+    Note: replace $HOME with $VELOCITY_DIR as necessary
+
 ## Configuration
 
 The following environment variables can be used to configure the theme:
