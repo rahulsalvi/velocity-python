@@ -1,4 +1,4 @@
-# Velocity
+# velocity
 
 Powerline-based theme elements for ZSH and tmux
 
