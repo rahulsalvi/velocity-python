@@ -1,5 +1,6 @@
 import sys
 import os
+import pwd
 import subprocess
 import shlex
 import datetime
@@ -115,12 +116,12 @@ def resolveTmux(segments, backwards):
         return string + " "
 
 def getHostText():
-    username = os.getlogin()
+    username = pwd.getpwuid(os.getuid())[0]
     hostname = os.uname()[1]
     return username + "@" + hostname
 
 def getDirectoryText():
-    return os.getcwd().replace("/Users/rahulsalvi", "~", 1)
+    return os.getcwd().replace("/Users/rahulsalvi", "~", 1).replace("/home/rahulsalvi", "~", 1)
 
 def getGitInfo(isInDotGitFolder):
     cmd = subprocess.Popen(['git', 'symbolic-ref', '-q', 'HEAD'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
