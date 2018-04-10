@@ -126,7 +126,7 @@ def getDirectoryText():
 def getGitInfo(isInDotGitFolder):
     cmd = subprocess.Popen(['git', 'symbolic-ref', '-q', 'HEAD'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = cmd.communicate()
-    if 'fatal: Not' in err.decode(encoding):
+    if 'fatal: not' in err.decode(encoding):
         return "", -1
     elif not out:
         sha = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
